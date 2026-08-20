@@ -387,7 +387,7 @@ def training_modes_menu():
             ],
             [
                 InlineKeyboardButton(
-                    text="🔤 Все три формы",
+                    text="2️⃣ Все три формы",
                     callback_data="mode_all",
                 )
             ],
@@ -412,7 +412,7 @@ def weak_modes_menu():
             ],
             [
                 InlineKeyboardButton(
-                    text="🔤 Работа над ошибками: все три формы",
+                    text="2️⃣ Работа над ошибками: все три формы",
                     callback_data="weak_all",
                 )
             ],
@@ -536,7 +536,7 @@ async def start_training(
     await message.answer(
         f"{title}\n\n"
         f"Режим: <b>{mode_text}</b>\n\n"
-        "Ошибочные глаголы будут повторяться чаще."
+        "Глаголы, в которых была допущена ошибка, будут повторяться чаще."
     )
 
     await ask_question(
@@ -586,7 +586,7 @@ async def learn_button_handler(message: Message, state: FSMContext):
         "📚 <b>Выбери вариант обучения:</b>\n\n"
         "1️⃣ <b>Первая форма → вторая форма</b>\n"
         "Например: <code>go went</code>\n\n"
-        "🔤 <b>Все три формы</b>\n"
+        "2️⃣ <b>Все три формы</b>\n"
         "Например: <code>go went gone</code>",
         reply_markup=training_modes_menu(),
     )
@@ -849,7 +849,7 @@ async def help_handler(message: Message):
         "📊 Статистика — результаты.\n\n"
         "В обоих режимах слабых глаголов доступны:\n"
         "1️⃣ первая форма → вторая форма;\n"
-        "🔤 все три формы."
+        "2️⃣ все три формы."
     )
 
 
