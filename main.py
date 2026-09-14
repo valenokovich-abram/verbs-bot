@@ -86,7 +86,7 @@ VERBS = [
     ("sing", "sang", "sung", "петь"),
     ("sit", "sat", "sat", "сидеть"),
     ("sleep", "slept", "slept", "спать"),
-    ("speak", "spoke", "spoken", "говорить"),
+    ("speak", "spoke", "spoken", "разговаривать"),
     ("spend", "spent", "spent", "тратить"),
     ("stand", "stood", "stood", "стоять"),
     ("steal", "stole", "stolen", "красть"),
